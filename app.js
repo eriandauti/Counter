@@ -10,6 +10,14 @@ btns.forEach(function (btn){
             count--;
         }
 
+        else if(styles.contains('increase')){
+            count++;
+        }
+        else{
+            count = 0;
+        }
+        
+
         value.textContent = count;
 
     });
